@@ -2,6 +2,11 @@
 
 A responsive, interactive memory card game built using **HTML**, **CSS**, and **JavaScript**, themed around popular programming technologies. Flip cards, test your memory, and challenge yourself to match all tech icons!
 
+## View the Project
+
+You can check out the live version of the project using the following link:  
+[Live Project on GitHub Pages](https://mohamed-gaber53.github.io/Memory-Game/)
+
 ## 🚀 Features
 
 - 🔁 Flip cards
