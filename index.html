@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A professional memory matching game featuring tech stack icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Tech Stack Memory Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <header class="header">
+        <div class="controls">
+          <h2 id="name">👋 Hello, <span id="player-name"></span></h2>
+          <button class="btn" id="reset-btn">Reset</button>
+        </div>
+        <div class="status">
+          <p><i class="fas fa-clock"></i> Time: <span id="time">60</span>s</p>
+          <p>
+            <i class="fas fa-redo"></i> Tries: <span id="tries-num">0</span>
+          </p>
+          <p>
+            <i class="fas fa-star"></i> Matches: <span id="matches">0</span>/10
+          </p>
+        </div>
+      </header>
+      <main>
+        <section class="game-blocks">
+          <div class="game-block" data-techno="HTML">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-html5" title="HTML5"></i>
+            </div>
+          </div>
+          <div class="game-block" data-techno="HTML">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-html5" title="HTML5"></i>
+            </div>
+          </div>
+
+          <div class="game-block" data-techno="CSS3">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+            </div>
+          </div>
+          <div class="game-block" data-techno="CSS3">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+            </div>
+          </div>
+
+          <div class="game-block" data-techno="JavaScript">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-js" title="JavaScript"></i>
+            </div>
+          </div>
+          <div class="game-block" data-techno="JavaScript">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-js" title="JavaScript"></i>
+            </div>
+          </div>
+
+          <div class="game-block" data-techno="Python">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-python" title="Python"></i>
+            </div>
+          </div>
+          <div class="game-block" data-techno="Python">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-python" title="Python"></i>
+            </div>
+          </div>
+
+          <div class="game-block" data-techno="Angular">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-angular" title="Angular"></i>
+            </div>
+          </div>
+          <div class="game-block" data-techno="Angular">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-angular" title="Angular"></i>
+            </div>
+          </div>
+          <div class="game-block" data-techno="React">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-react" title="React"></i>
+            </div>
+          </div>
+          <div class="game-block" data-techno="React">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-react" title="React"></i>
+            </div>
+          </div>
+
+          <div class="game-block" data-techno="Node">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-node-js" title="Node.js"></i>
+            </div>
+          </div>
+          <div class="game-block" data-techno="Node">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-node-js" title="Node.js"></i>
+            </div>
+          </div>
+
+          <div class="game-block" data-techno="Vue">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-vuejs" title="Vue.js"></i>
+            </div>
+          </div>
+          <div class="game-block" data-techno="Vue">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-vuejs" title="Vue.js"></i>
+            </div>
+          </div>
+
+          <div class="game-block" data-techno="GitHub">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-github" title="GitHub"></i>
+            </div>
+          </div>
+          <div class="game-block" data-techno="GitHub">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-github" title="GitHub"></i>
+            </div>
+          </div>
+
+          <div class="game-block" data-techno="Bootstrap">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-bootstrap" title="Bootstrap"></i>
+            </div>
+          </div>
+          <div class="game-block" data-techno="Bootstrap">
+            <div class="face front">!</div>
+            <div class="face back">
+              <i class="fab fa-bootstrap" title="Bootstrap"></i>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="player-info">
+        <input type="text" id="player-name__input" placeholder="Your Name..." />
+        <button class="btn" id="btn-name">Start Game</button>
+      </div>
+    </div>
+
+    <div id="endPage" class="endpage">
+      <div class="endpage-info">
+        <h2>Game Ended</h2>
+        <p>Your Score: <span id="final-score">8</span></p>
+        <button class="btn" id="replay">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
