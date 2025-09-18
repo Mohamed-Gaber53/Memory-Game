@@ -21,8 +21,9 @@ A responsive, interactive memory card game built using **HTML**, **CSS**, and **
 
 ## 📸 Screenshots
 
-![Game Screenshot](./assets/memory Game.png)
+![Game Screenshot](./assets/memory Game.png) 
 ![Game Screenshot](./assets/memory Game1.png)
+
 
 ---
 # Live Demo
