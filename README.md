@@ -24,6 +24,13 @@ A responsive, interactive memory card game built using **HTML**, **CSS**, and **
 ![Game Screenshot](./assets/memory Game.png)
 ![Game Screenshot](./assets/memory Game1.png)
 
+---
+# Live Demo
+
+Try the game live here: [Memmory Game Live](https://mohamed-gaber53.github.io/Memory-Game/)
+
+---
+
 ## 📂 Project Structure
 
 📁 memory-game/ ├── 📄 index.html ├── 📄 style.css ├── 📄 script.js ├── 📁 assets/ │ └── icons, sounds, and images ├── 📁 screenshots/ │ └── screenshot-light.png │ └── screenshot-mobile.png └── 📄 README.md
